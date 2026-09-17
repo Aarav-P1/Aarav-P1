@@ -130,6 +130,23 @@
     }
     .map-label strong { display: block; font-size: 0.95rem; }
     .map-label span { color: var(--muted); font-size: 0.85rem; }
+    .maps-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      background: var(--navy);
+      color: var(--white);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .9rem;
+      transition: background .2s, transform .2s;
+    }
+    .maps-button:hover {
+      background: var(--blue);
+      transform: translateY(-1px);
+    }
 
     footer { background: var(--navy); color: white; padding: 25px 0; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: .9rem; }
@@ -208,6 +225,7 @@
           <div class="details">
             <a class="detail" href="tel:+16475335517"><span class="detail-icon">☎</span><span><strong>(647) 533-5517</strong><small>Call us directly</small></span></a>
             <div class="detail"><span class="detail-icon">⌖</span><span><strong>Indian Passport Services</strong><small>90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7</small><em>(Entry from back side)</em></span></div>
+            <a class="maps-button" href="https://www.google.com/maps/place/Indian+Passport+Services/@43.688417,-79.7416423,17z/data=!3m2!4b1!5s0x882b3e2090df69cd:0x58f58a1483910ac2!4m6!3m5!1s0xa0ebbd65c28db965:0xde3e9af77c242af!8m2!3d43.688417!4d-79.7390674!16s%2Fg%2F11wfqr6qvk?entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Open in Maps</a>
           </div>
         </div>
         <div class="map-card">
