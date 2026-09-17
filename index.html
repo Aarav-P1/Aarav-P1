@@ -94,8 +94,36 @@
     .detail-icon { width: 40px; height: 40px; border-radius: 10px; background: #ffedd5; display: grid; place-items: center; }
     .detail strong { display: block; }
     .detail small { color: var(--muted); }
-    .map-card { min-height: 260px; border-radius: 22px; overflow: hidden; background: #dcecf3; box-shadow: 0 10px 25px rgba(16,42,67,.1); }
-    .map-card iframe { display: block; width: 100%; height: 100%; min-height: 260px; border: 0; pointer-events: none; }
+    .map-card {
+      position: relative;
+      min-height: 260px;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #dcecf3;
+      box-shadow: 0 10px 25px rgba(16,42,67,.1);
+    }
+    .map-card iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      border: 0;
+      pointer-events: none;
+    }
+    .map-label {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--navy);
+      padding: 12px 14px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(16,42,67,0.12);
+      z-index: 2;
+      max-width: 78%;
+    }
+    .map-label strong { display: block; font-size: 0.95rem; }
+    .map-label span { color: var(--muted); font-size: 0.85rem; }
 
     footer { background: var(--navy); color: white; padding: 25px 0; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: .9rem; }
@@ -173,16 +201,20 @@
           <p>Reach out today to discuss your documentation needs and learn how we can assist.</p>
           <div class="details">
             <a class="detail" href="tel:+16475335517"><span class="detail-icon">☎</span><span><strong>(647) 533-5517</strong><small>Call us directly</small></span></a>
-            <div class="detail"><span class="detail-icon">⌖</span><span><strong>90 Kennedy Rd</strong><small>Brampton, Canada</small></span></div>
+            <div class="detail"><span class="detail-icon">⌖</span><span><strong>90 Kennedy Rd S Unit 3</strong><small>Brampton, ON L6W 3E7</small></span></div>
           </div>
         </div>
         <div class="map-card">
           <iframe
-            src="https://www.google.com/maps?q=90+Kennedy+Rd,+Brampton,+ON&output=embed"
-            title="Map showing 90 Kennedy Road, Brampton"
+            src="https://www.google.com/maps?q=90+Kennedy+Rd+S+Unit+3,+Brampton,+ON+L6W+3E7&output=embed"
+            title="Map showing Indian Passport Services, 90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7"
             loading="lazy"
-            aria-label="Non-interactive map showing 90 Kennedy Road, Brampton">
+            aria-label="Map showing Indian Passport Services office location">
           </iframe>
+          <div class="map-label">
+            <strong>Indian Passport Services</strong>
+            <span>90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7</span>
+          </div>
         </div>
       </div>
     </section>
