@@ -108,13 +108,13 @@
       background: #dcecf3;
       box-shadow: 0 10px 25px rgba(16,42,67,.1);
     }
-    .map-card img {
+    .map-card iframe {
       display: block;
       width: 100%;
       height: 100%;
       min-height: 260px;
-      object-fit: cover;
       border: 0;
+      pointer-events: none;
     }
     .map-label {
       position: absolute;
@@ -229,11 +229,12 @@
           </div>
         </div>
         <div class="map-card">
-          <img
-            src="https://staticmap.openstreetmap.de/staticmap.php?center=43.688417,-79.7390674&zoom=17&size=800x500&maptype=mapnik"
-            alt="Map showing Indian Passport Services location"
+          <iframe
+            src="https://www.google.com/maps?q=90+Kennedy+Rd+S+Unit+3,+Brampton,+ON+L6W+3E7&output=embed"
+            title="Map showing Indian Passport Services, 90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7"
             loading="lazy"
-          >
+            aria-label="Map showing Indian Passport Services office location">
+          </iframe>
           <div class="map-label">
             <strong>Indian Passport Services</strong>
             <span>90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7</span>
