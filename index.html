@@ -12,26 +12,119 @@
     a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
     header{background:var(--white);border-bottom:1px solid #edf1f5;position:sticky;top:0;z-index:10}
     .nav{display:flex;justify-content:space-between;align-items:center;min-height:76px;gap:24px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.4px}.brand-mark{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:900;background:linear-gradient(135deg,var(--saffron),#ef4444)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.4px}.brand-mark{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;overflow:hidden;flex-shrink:0}.brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
     .nav-links{display:flex;gap:28px;color:var(--muted);font-size:.95rem}.nav-links a:hover{color:var(--blue)}
-    .nav-cta,.button{display:inline-block;background:var(--navy);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{background:var(--blue);transform:translateY(-2px)}
-    .hero{padding:100px 0 90px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#ffe5c2;right:-150px;top:-150px;z-index:-1}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
-    .eyebrow{color:#d97706;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;margin-bottom:18px}h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;letter-spacing:-3px;max-width:680px;margin-bottom:24px}.hero p{color:var(--muted);font-size:1.15rem;max-width:570px;margin-bottom:32px}.button.light{background:#fff;color:var(--navy);border:1px solid #d9e2ec;margin-left:10px}.button.light:hover{background:#f0f4f8}
-    .hero-card{background:var(--navy);color:#fff;border-radius:24px;padding:34px;box-shadow:0 20px 50px rgba(16,42,67,.2)}.hero-card h2{font-size:1.6rem;margin-bottom:20px}.check{display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.15)}.check:last-child{border:0}.check span{color:#fbbf24;font-weight:900}
-    section{padding:88px 0}.section-heading{max-width:600px;margin-bottom:42px}.section-heading h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;margin-bottom:12px}.section-heading p{color:var(--muted)}.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service-card{padding:27px 22px;border:1px solid #e6edf3;border-radius:16px;background:#fff;transition:transform .2s,box-shadow .2s}.service-card:hover{transform:translateY(-6px);box-shadow:0 15px 30px rgba(16,42,67,.08)}.icon{font-size:1.9rem;margin-bottom:16px}.service-card h3{margin-bottom:9px;font-size:1.1rem}.service-card p{color:var(--muted);font-size:.93rem}
-    .contact{background:#f4f8fb}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.contact-box h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin-bottom:16px}.contact-box>div>p{color:var(--muted);margin-bottom:28px}.details{display:grid;gap:16px}.detail{display:flex;gap:14px;align-items:flex-start}.detail-icon{width:40px;height:40px;border-radius:10px;background:#ffedd5;display:grid;place-items:center}.detail strong{display:block}.detail small{color:var(--muted)}.detail em{display:block;font-style:italic;color:var(--muted);margin-top:4px}
+    .nav-cta,.button{display:inline-block;background:var(--navy);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{background:#0f2340;transform:translateY(-1px)}
+    .hero{padding:100px 0 90px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#ffe5c2;right:-150px;top:-150px;z-index:0}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center;position:relative;z-index:1}
+    .eyebrow{color:#d97706;text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;margin-bottom:18px}h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;letter-spacing:-3px;max-width:640px;margin-bottom:24px}p{font-size:1.03rem;color:var(--muted)}
+    .hero-card{background:var(--navy);color:#fff;border-radius:24px;padding:34px;box-shadow:0 20px 50px rgba(16,42,67,.2)}.hero-card h2{font-size:1.6rem;margin-bottom:20px}.check{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}.check-mark{width:20px;height:20px;border-radius:50%;background:#f59e0b;display:grid;place-items:center;font-size:.8rem;font-weight:800;color:#fff;flex-shrink:0;margin-top:5px}.hero-card p{color:rgba(255,255,255,.8)}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.button.secondary{background:#edf5fc;color:var(--navy)}
+    .services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.service-card{background:#f9fbfe;border:1px solid #edf1f5;border-radius:20px;padding:24px;box-shadow:0 8px 20px rgba(16,42,67,.03)}.service-card h3{font-size:1.2rem;margin:16px 0 10px}.icon{width:52px;height:52px;border-radius:14px;background:#e9f3ff;color:var(--blue);display:grid;place-items:center;font-size:1.45rem;font-weight:800}
+    section{padding:88px 0}.section-heading{max-width:600px;margin-bottom:42px}.section-heading h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;margin-bottom:12px}.section-heading p{color:var(--muted)}
+    .contact{background:#f4f8fb}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.contact-box h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin-bottom:16px}.contact-card{background:#fff;border:1px solid #edf1f5;border-radius:20px;padding:28px;box-shadow:0 10px 25px rgba(16,42,67,.05)}.contact-row{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}.contact-label{font-weight:800;color:var(--navy)}.contact-row p,.contact-row a{color:var(--muted)}
     .map-card{min-height:260px;border-radius:22px;overflow:hidden;background:#e8e7e1;box-shadow:0 10px 25px rgba(16,42,67,.1)}.map-card iframe{display:block;width:100%;height:100%;min-height:260px;border:0}
     footer{background:var(--navy);color:#fff;padding:25px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:.9rem}footer span{color:#b7c8d8}
-    @media(max-width:800px){.nav-links{display:none}.hero{padding:70px 0}.hero-grid,.contact-box{grid-template-columns:1fr;gap:40px}.service-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:500px){.nav-cta{padding:10px 13px;font-size:.85rem}h1{letter-spacing:-2px}.button{width:100%;text-align:center}.button.light{margin:10px 0 0}.service-grid{grid-template-columns:1fr}section{padding:65px 0}.footer-inner{flex-direction:column;align-items:flex-start}}
+    @media(max-width:800px){.nav-links{display:none}.hero{padding:70px 0}.hero-grid,.contact-box{grid-template-columns:1fr;gap:40px}.service-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.service-grid{grid-template-columns:1fr}.nav{min-height:68px}.brand span:last-child{font-size:.9rem}.footer-inner{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
 <body>
-  <header><div class="container nav"><a class="brand" href="#top"><span class="brand-mark">IP</span><span>Indian Passport<br>Services</span></a><nav class="nav-links" aria-label="Main navigation"><a href="#services">Services</a><a href="#contact">Contact</a></nav><a class="nav-cta" href="tel:+16475335517">Call us</a></div></header>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <img src="WhatsApp%20Image%202025-05-14%20at%203.47.39%20PM.jpeg" alt="Indian Passport Services logo">
+        </span>
+        <span>Indian Passport<br>Services</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Book a consultation</a>
+      </nav>
+    </div>
+  </header>
+
   <main id="top">
-    <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Passport & documentation support</div><h1>Your paperwork, made simple.</h1><p>Reliable assistance for Indian passport and immigration-related documentation in Canada.</p><a class="button" href="#contact">Get in touch</a><a class="button light" href="#services">View services</a></div><div class="hero-card"><h2>Support you can count on</h2><div class="check"><span>✓</span> Clear guidance through every step</div><div class="check"><span>✓</span> Convenient local service in Brampton</div><div class="check"><span>✓</span> Friendly, professional assistance</div><div class="check"><span>✓</span> Help with essential documentation</div></div></div></section>
-    <section class="services" id="services"><div class="container"><div class="section-heading"><div class="eyebrow">What we do</div><h2>Services tailored to your needs</h2><p>We help make the documentation process more organized and straightforward.</p></div><div class="service-grid"><article class="service-card"><div class="icon">🔄</div><h3>Indian Passport Renewal</h3><p>Assistance with preparing and submitting your passport renewal documentation.</p></article><article class="service-card"><div class="icon">📄</div><h3>Indian Passport Surrender</h3><p>Guidance for the Indian passport surrender process and required paperwork.</p></article><article class="service-card"><div class="icon">✅</div><h3>Police Clearance Certificate</h3><p>Support with your PCC application and documentation requirements.</p></article><article class="service-card"><div class="icon">🌏</div><h3>OCI Services</h3><p>Helpful support for Overseas Citizen of India applications and renewals.</p></article></div></div></section>
-    <section class="contact" id="contact"><div class="container contact-box"><div><div class="eyebrow">Let’s get started</div><h2>Have questions? We’re here to help.</h2><p>Reach out today to discuss your documentation needs and learn how we can assist.</p><div class="details"><a class="detail" href="tel:+16475335517"><span class="detail-icon">☎</span><span><strong>(647) 533-5517</strong><small>Call us directly</small></span></a><div class="detail"><span class="detail-icon">⌖</span><span><strong>Indian Passport Services</strong><small>90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7</small><em>(Entry from back side)</em></span></div></div></div><div class="map-card"><iframe src="https://www.google.com/maps?q=90+Kennedy+Rd+S+Unit+3,+Brampton,+ON+L6W+3E7&output=embed" title="Interactive map showing 90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7" loading="lazy" allowfullscreen aria-label="Interactive map showing Indian Passport Services at 90 Kennedy Rd S Unit 3, Brampton, ON L6W 3E7"></iframe></div></div></section>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Passport & documentation support</div>
+          <h1>Your paperwork, made simple.</h1>
+          <p>Reliable assistance for Indian passport renewal, surrender, PCC, OCI, and other documentation needs in Canada.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Get started</a>
+            <a class="button secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Why clients choose us</h2>
+          <div class="check"><span class="check-mark">✓</span><div><strong>Clear guidance</strong><p>Step-by-step support for every application and renewal.</p></div></div>
+          <div class="check"><span class="check-mark">✓</span><div><strong>Convenient local service</strong><p>Support for all essential documentation needs in one place.</p></div></div>
+          <div class="check"><span class="check-mark">✓</span><div><strong>Friendly, professional assistance</strong><p>We help make paperwork less stressful.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What we do</div>
+          <h2>Services tailored to your needs</h2>
+          <p>We help make the documentation process easier, clearer, and more organized for individuals and families in Canada.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">🛂</div>
+            <h3>Indian Passport Renewal</h3>
+            <p>Assistance with preparing and submitting your passport renewal documentation.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">📄</div>
+            <h3>Indian Passport Surrender</h3>
+            <p>Guidance for the passport surrender process and required paperwork.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🇮🇳</div>
+            <h3>PCC & OCI Services</h3>
+            <p>Support with PCC applications, OCI-related forms, and essential documentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-box">
+        <div>
+          <div class="eyebrow">Let’s get started</div>
+          <h2>Have questions? We’re here to help.</h2>
+          <p>Reach out today to discuss your documentation needs and learn how we can assist.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-row">
+            <div class="contact-label">Phone</div>
+            <a href="tel:+16475550132">+1 (647) 555-0132</a>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Location</div>
+            <p>Toronto, Ontario, Canada</p>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Email</div>
+            <a href="mailto:hello@indianpassportservices.ca">hello@indianpassportservices.ca</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer><div class="container footer-inner"><strong>Indian Passport Services</strong><span>© 2026 Indian Passport Services. All rights reserved.</span></div></footer>
+
+  <footer>
+    <div class="container footer-inner">
+      <strong>Indian Passport Services</strong>
+      <span>© 2026 Indian Passport Services. All rights reserved.</span>
+    </div>
+  </footer>
 </body>
 </html>
